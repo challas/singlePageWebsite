@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,examples,source code,demos,tips,cascading style sheets,Web building,Webmaster" />
+<meta name="Description" content="Free HTML CSS JavaScript jQuery template" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<title>JQuery based Single page Website template</title>
+<style>
+html {height: 100%; margin-bottom: 10px; overflow-y: scroll;}
+body {color: #666; background-color: #eee; font:normal normal 100 15px/20px cambria, Serif;  text-shadow:2px 2px 10px #ccc;}
+h1 {font-size: 35px; margin-bottom: 10px; padding-top:10px; padding-bottom:5px; border-bottom: 1px solid #eb0; text-shadow:0px 0px 3px #ccc; color:#aaa;}
+h1 small {font:normal normal 100 15px/15px verdana, sans-serif; padding-left: 20px; color:#0be;}
+h2, h3, h4 {margin-bottom: 5px;}
+h3{ color:#aaa; border-bottom:3px solid #aaa;}
+h4{ color:#555; background-color:#ddd; padding:5px 0px 5px 15px;}
+p {margin-top: 5px; margin-left:10px;}
+pre {background-color: #F6F6F6;}
+code {border:dashed 1px #aaa; padding:5px;}
+nav {font-size: 20px; text-align:right; margin-bottom:20px; display:block; width:100%; float:right;}
+nav a {margin: 10px; padding:5px; color: #c00; text-shadow:2px 2px 10px #555; text-align:right; }
+nav a:hover {color: #0be; border-top:3px solid #0be;  }
+
+
+img{box-shadow: 2px 2px 5px #aaa; margin:5px;}
+img a {border:0px solid #fff;}
+a {color:#c00; text-decoration: none; cursor: pointer;	cursor: hand;}
+a:hover {color: #0be; }
+
+
+#allcontent {margin: 0 auto; width: 960px;}
+#footer {color: #888; border-top:1px dotted #888; text-align:center;}
+.selectednav {color:#0be;}
+</style>		
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".page").hide();
+	$("#page1").fadeIn(1000);
+		
+	$("#link1").click(function(){
+		$(".page").hide();
+		$("#page1").fadeIn();
+	});
+	
+	$("#link2").click(function(){
+		$(".page").hide();
+		$("#page2").fadeIn(2000);
+	});
+
+	$("#link3").click(function(){
+		$(".page").hide();
+		$("#page3").slideDown()
+	});
+	
+$("#link4").click(function(){
+		$(".page").hide();
+		$("#page4").fadeIn(1500);
+	});
+});
+</script>
+</head>
+
+<body>
+<br />
+	<h1>Single Page Website template<small>[ <a href="http://challa.net/singlepagewebsite/index.html">challa.net/singlepagewebsite</a> ]</small></h1>
+	<nav>
+	<a id="link1">about this template</a>
+	<a id="link2">usage</a>
+	<a id="link3">free download</a>
+	<a id="link4">contact</a>
+	</nav>
+</div>
+
+<div id="content">
+
+<div id="page1" class="page">
+
+<h2>About this template.</h2>
+<p>
+<h4>Features:</h4>
+	<ul>
+	<li>Free template!!</li>
+	<li>Single page website - All that you see is in one HTML page</li>
+	<ul><li>Deployment is literally pushing one index.html file to the hosting site.</li></ul>
+	<li>content is rendered using JQuery's fadeIn() or slideDown() effect - time the effect will last can be customized</li>
+	<li>easily Customizable with some knowledge of HTML, CSS, Java Script</li>
+	<li>Uses <a href="http://www.jquery.com">JQuery</a></li>
+		<ul>
+		<li>version: 1.9.1</li>
+		<li>JQuery code is in the script block of this page</li>
+		<li><b>by default JQuery is accessed from ajax.googleapis.com</b> - this is to keep all the code in one page</li>
+		<li>You can change this behaviour by downloading and adding the script from jquery.com</li>
+		</ul>
+	<li>CSS code is on the same page</li>		
+	<li>Additional files needed are</li>
+	<ul>
+	<li>jquery-1.9.1.min.js (at 91kb) <i>"if"</i> you want to host javascript on your site.</li>
+	<li>Any additional image files that might be used</li>
+	</ul>
+	</ul>
+</p>
+<h4>Developed by</h4>
+<p>Shivaram Challa (<a href="http://challa.net">challa.net)</a>
+</p>
+<h4>Other projects/tools created by Shiva  </h4>
+<p>
+All the following tools are coded in C#. They are all licensed under
+<a href="http://www.gnu.org/licenses/quick-guide-gplv3.html">GNU GPL 3</a>. Which means you can download, use and redistribute at will.<br /><br />
+<a href="http://readcache.com/getwebfile" target="_blank" style="">http://readcache.com/<strong style="">getwebfile</strong></a>: Download any text file off of a website.<br /><br />
+<a href="http://readcache.com/browsepad" target="_blank" style="">http://readcache.com/<strong style="">browsepad</strong></a>: Simply a Notepad with a built-in file explorer.<br /><br />
+<a href="http://readcache.com/excel2csvconverter" target="_blank" style="">http://readcache.com/<strong style="">excel2csvconverter</strong></a>: Converts Excel(.xls and .xlsx) file to CSV files. Each individual tab will be converted to a seperate CSV file (Webpage under is construction).<br /><br />
+<a href="http://readcache.com/renameext" target="_blank" style="">http://readcache.com/<strong style="">renameext</strong></a>: Rename several file's extension in a folder in a jiff.<br /><br />
+</p>
+</div>
+
+
+
+
+
+<div id="page2"  class="page">
+<h2>Usage</h2>
+<p>
+<h4>Get source code</h4>
+<ol>
+<li>Go to Download page to get the source code</li>
+<li>open the html file in a text editor like notepad or <a href="http://www.flos-freeware.ch/notepad2.html">notepad2</a>
+<ul><li>All the development for this template was done using <a href="http://www.flos-freeware.ch/notepad2.html">notepad2</a></li></ul>
+</li>	
+<li>Change all the text according to your needs</li>
+<li>See below guide to understand the purpose of each html element/tag</li>
+<li>Getting Fade-In or Slide-down effect:
+	<ul>
+	<li>Find <code>&lt;script type="text/javascript"&gt;  
+$(document).ready(function(){ </code> in the index.html file.</li><br /> 
+
+	<li><b>For Fade-in effect: </b>replace <code>$("#page1").slideDown();</code> with <code>$("#page1").fadeIn();</code> </li><br />
+	<li><b>For Slide-Down effect: </b>replace <code>$("#page1").fadeIn();</code> with <code>$("#page1").slideDown();</code> </li>
+	</ul>
+</li><br />
+<li>For extending or reducing the time the effect lasts (default is one second (value=1000)):</li>
+<code>$("#page1").fadeIn(<i>xx</i>);</code> for the effect to last 3 seconds, replace <i>xx</i> with 3000, at all instance on the index.html file.
+</ol>
+</p>
+<h4>HTML element/tag and their purpose (with in this template)</h4>
+<p>
+<table>
+<tr><th>type</th><th>element</th></tr>
+<tr><td>Site titles</td><td>h1</td></tr>
+<tr><td>sub title</td><td>h1 small</td></tr>
+<tr><td>anchor tag</td><td>a</td></tr>
+<tr><td>page title</td><td>h2</td></tr>
+<tr><td>page sub title</td><td>h3</td></tr>
+<tr><td>article title</td><td>h4</td></tr>
+<tr><td>paragraph</td><td>p</td></tr>
+</table>
+</p>
+<h4>guide</h4>
+<p>
+<img src="usage.png" alt="usage instructions" />
+</p>
+</div>
+
+
+
+
+
+
+<div id="page3" class="page"> 
+<h2>FREE Download!!</h2>
+<h4>Download this file, by right-click and save as</h4>
+<ul>
+<li><a href="http://challa.net/singlepagewebsite/index.html">index.html</a> Don't click on this link; instead right-click and save-as.</li>
+OR
+<li>View source of this page and save the source file as index.html</li>
+<li>...Emply template coming soon...</li>
+</ul>
+<h4>All these files are optional</h4>
+<ul>
+<li><a href="jquery-1.9.1.min.js">jquery-1.9.1.min.js</a></li>
+If you want to use this file you will have to add this line of script in your page:<br>
+<code>&lt;script type="text/javascript" src="jquery-1.9.1.min.js"&gt; &lt;/script&gt; </code>
+</ul>
+
+<h4>Copyright &copy; 2013  Shivaram Challa</h4>
+<h4>License</h4>
+<p>
+<a href="http://www.gnu.org/licenses/gpl-3.0.html"><img src="http://www.gnu.org/graphics/gplv3-127x51.png" alt="GNU GPL3" style="float:left;"/></a>
+This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+</p>
+</div>
+
+
+
+
+<div id="page4" class="page"> 
+<h2>Contact Shivaram Challa</h2>
+<h4>Website</h4>
+<p>This template is developed by Shivaram Challa (<a href="http://challa.net">www.challa.net</a>)</p>
+<h4>Email</h4>
+<p>For suggestions or comments, send an email to shiva @ challa . net</p>
+<h4>Form</h4>
+<p>For Feedback form: <a href="http://challa.net/browsepad/ContactUS.aspx">click here</a></p>
+</div>
+<div id="footer">Copyright &copy; 2013  Shivaram Challa<br><a href="http://challa.net">challa.net</a></div>
+</div>
+</body>
+</html>
+
