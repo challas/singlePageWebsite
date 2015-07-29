@@ -1,6 +1,6 @@
 # singlePageWebsite
-+ There is only one file to download, Index.hmtl page of the single page website. Everything this you need is in this single HTML page.
-+ Deployment is literally pushing one index.html file to the hosting site.
++ There is only one file to download, Index.html page. Everything you need is in this single HTML page.
++ Deployment is literally uploading one index.html file to the hosting site.
 + Content is rendered using JQuery's fadeIn() or slideDown() effect - time the effect will last can be customized
 ==> easily Customizable with some knowledge of HTML, CSS, Java Script
 + Uses JQuery version: 1.9.1
